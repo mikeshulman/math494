@@ -108,8 +108,12 @@ begin
   assumption
 end
 
-example : f '' (f⁻¹' u) ⊆ u :=
+variable (U : set B)
+
+def im_preim : f '' (f⁻¹' U) ⊆ U :=
 sorry
 
-example (h : surjective f) : u ⊆ f '' (f⁻¹' u) :=
+#print surjective
+
+def im_preim' (h : surjective f) : U ⊆ f '' (f⁻¹' U) :=
 sorry
