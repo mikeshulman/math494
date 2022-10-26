@@ -107,3 +107,9 @@ begin
   rw ←e,
   assumption
 end
+
+example : f '' (f⁻¹' u) ⊆ u :=
+sorry
+
+example (h : surjective f) : u ⊆ f '' (f⁻¹' u) :=
+sorry
